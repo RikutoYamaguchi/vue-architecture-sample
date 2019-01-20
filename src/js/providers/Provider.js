@@ -13,7 +13,7 @@ class Provider {
   }
 
   singleton (provide, ...singletonArguments) {
-    if (singletonArguments.length = 0) {
+    if (singletonArguments.length === 0) {
       singletonArguments = null
     }
 
@@ -35,7 +35,7 @@ class Provider {
   }
 
   attach (container) {
-    if (!_.isObject(container.app)) {
+    if (!_.isObject(container.$app)) {
       container.$app = {}
     }
 
